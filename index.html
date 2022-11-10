@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Movie App</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="img/movie.png" alt="movie-icon" width="50" height="50" />ZNMOVIE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- akhir navbar -->
+    <main>
+      <div class="container">
+        <div class="row mt-5 pt-5">
+          <div class="col-12 mt-5">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control rounded-pill" id="keyword" placeholder="Search Your Movies" aria-label="Recipient's username" aria-describedby="button-addon2" />
+              <button class="btn btn-outline-primary rounded-pill ms-2" type="button">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="container">
+        <div class="row mt-5">
+          <div class="col-lg-6 alerts position-relative"></div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="row movie-content mt-5"></div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
